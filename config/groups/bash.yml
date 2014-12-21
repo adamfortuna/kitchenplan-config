@@ -1,5 +1,3 @@
-groups:
-    - groupb
 recipes:
     mac_os_x:
         - osxdefaults::set_terminal_profile

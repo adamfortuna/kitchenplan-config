@@ -1,0 +1,19 @@
+groups:
+    - bash
+recipes:
+    mac_os_x:
+        - osxdefaults::set_computer_name
+        - osxdefaults::disable_front_row
+        - applications::sublime_text_3
+attributes:
+    osxdefaults:
+        computername: link
+    git:
+        name: Adam Fortuna
+    homebrewalt:
+        apps:
+            - git-extras
+        cask_apps:
+            - sourcetree
+            - slack
+  
