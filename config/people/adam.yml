@@ -1,19 +1,32 @@
-groups:
-    - bash
 recipes:
+    global:
+        - applications::create_var_chef_cache
     mac_os_x:
+        - nodejs::default
+      #  - homebrewalt::default
         - osxdefaults::set_computer_name
-        - osxdefaults::disable_front_row
-        - applications::sublime_text_3
 attributes:
     osxdefaults:
         computername: link
     git:
         name: Adam Fortuna
-    homebrewalt:
-        apps:
-            - git-extras
-        cask_apps:
-            - sourcetree
-            - slack
+        email: Adam Fortuna
+#    homebrewalt:
+#        apps:
+#            - git
+#            - git-extras
+#        cask_apps:
+#            - google-chrome
+#            - sourcetree
+#            - slack
+#	    - things
+#            - dropbox
+#            - evernote
+#            - bartender
+#            - caffeine
+#            - vlc
+#            - vagrant
+#            - virtualbox
+#        cask_fonts:
+#            - inconsolata
   
